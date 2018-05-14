@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--Start layout for self message display-->
+    <LinearLayout
+        android:id="@+id/ll_selfMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_selfTimeStamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="00:00"
+            android:textColor="@color/greyish_brown"
+            android:textSize="@dimen/txt_size_11" />
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/margin_2"
+            android:background="@drawable/box_bg_self_message">
+
+            <TextView
+                android:id="@+id/tv_selfMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8"
+                android:text="Message"
+                android:textColor="@color/charcoal_grey"
+                android:textSize="@dimen/txt_size_14" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--End layout for self message display-->
+
+    <!--Start layout for Friend message display-->
+    <RelativeLayout
+        android:id="@+id/ll_frnd_message"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        app:layout_constraintTop_toBottomOf="@+id/ll_selfMessage">
+
+        <LinearLayout
+            android:id="@+id/ll_bubbleName"
+            android:layout_width="@dimen/layout_size"
+            android:layout_height="@dimen/layout_size"
+            android:layout_marginEnd="@dimen/margin_4"
+            android:layout_marginStart="@dimen/margin_8"
+            android:background="@drawable/circle_bg_gray">
+
+            <TextView
+                android:id="@+id/tv_bubbleName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="BM"
+                android:textColor="@color/charcoal_grey"
+                android:textSize="@dimen/txt_size_10"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mszDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/ll_bubbleName"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_frndName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bhavesh"
+                android:textColor="@color/steel"
+                android:textSize="@dimen/txt_size_11" />
+
+            <TextView
+                android:id="@+id/tv_frndTimeStamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:00"
+                android:textColor="@color/steel"
+                android:textSize="@dimen/txt_size_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_mszDetail"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/margin_2"
+            android:layout_toRightOf="@+id/ll_bubbleName"
+            android:background="@drawable/box_bg_frnd_msz">
+
+            <TextView
+                android:id="@+id/tv_frndMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_weight="0.9"
+                android:text="Message"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_14" />
+
+            <ImageView
+                android:id="@+id/iv_smiley"
+                android:layout_width="0dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="@dimen/margin_2"
+                android:layout_marginTop="@dimen/margin_4"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_smiley" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!--End rt layout for Friend message display-->
+
+
+</android.support.constraint.ConstraintLayout>

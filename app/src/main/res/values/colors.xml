@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--Using this all color for our application DI Requirment-->
+
+    <color name="white">#ffffff</color>
+    <color name="white_two">#f2f2f2</color>
+    <color name="steel">#8a8d91</color>
+    <color name="pale_grey">#ebebed</color>
+    <color name="water_blue">#258fd5</color>
+    <color name="water_blue_two">#1988d8</color>
+    <color name="pale_teal_two">#70bcc4</color>
+    <color name="pale_teal">#82c7bf</color>
+    <color name="pink">#e262a6</color>
+    <color name="dark_blue">#1686d9</color>
+    <color name="greyish_brown">#555555</color>
+    <color name="charcoal_grey">#2b2c33</color>
+    <color name="light_grey">#d5d9de</color>
+    <color name="faded_orange">#ec7758</color>
+    <color name="statusBar_color">#146cac</color>
+
+
+</resources>
